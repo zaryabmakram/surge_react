@@ -25,6 +25,10 @@ jobs:
       uses: actions/setup-node@v2-beta
       with:
         node-version: 12
+    
+    # install react-scripts
+    - name: Install react-scripts
+      run: npm i -g react-scripts
 
     # build React app
     - name: Build React app
